@@ -10,7 +10,7 @@ class Indeed_Scraper:
 
     def __init__(self, title="", location="", radius=-1,):
         self.search = JobSearch(title, location, radius)
-        self.result_sheet = SpreadSheet(os.environ["USERPROFILE"]+"\\Desktop\\jobsearch.xlsx")
+        # self.result_sheet = SpreadSheet(os.environ["USERPROFILE"]+"\\Desktop\\jobsearch.xlsx")
         self.parser = Indeed_Parser
 
     def pull_indeed_into_spreadsheet(self):
